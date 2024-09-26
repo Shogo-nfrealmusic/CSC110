@@ -78,5 +78,7 @@
 # age = 20
 # print("Jen is", age, "years old")
 
-cost = 250
-print('That bike costs ' + str(250) + "$")
+# cost = 250
+# print('That bike costs ' + str(250) + "$")
+
+

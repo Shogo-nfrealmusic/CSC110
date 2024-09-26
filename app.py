@@ -45,15 +45,31 @@
 # next_age = float(Age) + 1
 # print(f'Next year you will be {next_age}')
 
-# Get the number of seconds from the user
-n = input("Enter the number of seconds between lightning and thunder: ")
+# # Get the number of seconds from the user
+# n = input("Enter the number of seconds between lightning and thunder: ")
 
-# Convert the input to an integer (assuming the input is a whole number)
-n = int(n)
+# # Convert the input to an integer (assuming the input is a whole number)
+# n = int(n)
 
-# Calculate the distance of the storm in miles and round it to two decimal places
-distance = round(n / 5, 2)
+# # Calculate the distance of the storm in miles and round it to two decimal places
+# distance = round(n / 5, 2)
 
-# Output the result
-print(f"The storm is {distance} miles away.")
+# # Output the result
+# print(f"The storm is {distance} miles away.")
+
+# radius = input("What is radius?: ")
+# to_number = float(radius)
+# circumference = to_number*2*3.14
+# print(f'Circumference is {circumference}')
+
+# radius = float(input("Enter radius: "))
+# circumph = 2*3.14*radius
+# print("Radius=", radius, "Circumpherence=", circumph)
+
+Months = int(input("Enter months: "))  # 月は整数なのでint()を使用
+Years = Months // 12  # 年数の整数部分
+month_left = Months % 12  # 残りの月数
+
+# 結果を見やすく表示
+print(f"Years = {Years}, Months = {month_left}")
 

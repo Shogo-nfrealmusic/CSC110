@@ -66,10 +66,17 @@
 # circumph = 2*3.14*radius
 # print("Radius=", radius, "Circumpherence=", circumph)
 
-Months = int(input("Enter months: "))  # 月は整数なのでint()を使用
-Years = Months // 12  # 年数の整数部分
-month_left = Months % 12  # 残りの月数
+# Months = int(input("Enter months: "))  # 月は整数なのでint()を使用
+# Years = Months // 12  # 年数の整数部分
+# month_left = Months % 12  # 残りの月数
 
-# 結果を見やすく表示
-print(f"Years = {Years}, Months = {month_left}")
+# # 結果を見やすく表示
+# print(f"Years = {Years}, Months = {month_left}")
 
+# print('HELLO' * 5)
+
+# age = 20
+# print("Jen is", age, "years old")
+
+cost = 250
+print('That bike costs ' + str(250) + "$")

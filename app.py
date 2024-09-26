@@ -14,14 +14,14 @@
 # print("\"What's your idea?\", she asked.")
 # print(int(-75.6))
 
-def inch_to_feet(value):
-    value1 = int(value)
-    feet = value1 // 12  
-    inches = value1 % 12  
-    return f"{feet} feet and {inches} inches"
+# def inch_to_feet(value):
+#     value1 = int(value)
+#     feet = value1 // 12  
+#     inches = value1 % 12  
+#     return f"{feet} feet and {inches} inches"
 
-result = inch_to_feet(33)
-print(result)  
+# result = inch_to_feet(33)
+# print(result)  
 
 # in_tot=50
 # feet=in_tot//12
@@ -35,5 +35,8 @@ print(result)
 # print("z =",100 / (2.7*3.1))
 
 # 正しいPythonコード
-z = (7 * (14/3 + 2.3)**2) / (5 - 2**(3/2))**3
-print("z =", round(z,2))
+# z = (7 * (14/3 + 2.3)**2) / (5 - 2**(3/2))**3
+# print("z =", round(z,2))
+
+town = input("Enter the name of your city: ")
+print(town + town)

@@ -38,5 +38,10 @@
 # z = (7 * (14/3 + 2.3)**2) / (5 - 2**(3/2))**3
 # print("z =", round(z,2))
 
-town = input("Enter the name of your city: ")
-print(town + town)
+# town = input("Enter 5the name of your city: ")
+# print(town + town)
+
+Age = input("How old are you?: ")
+next_age = int(Age) + 1
+print(f'Next year you will be {next_age}')
+

@@ -41,7 +41,19 @@
 # town = input("Enter 5the name of your city: ")
 # print(town + town)
 
-Age = input("How old are you?: ")
-next_age = int(Age) + 1
-print(f'Next year you will be {next_age}')
+# Age = input("How old are you?: ")
+# next_age = float(Age) + 1
+# print(f'Next year you will be {next_age}')
+
+# Get the number of seconds from the user
+n = input("Enter the number of seconds between lightning and thunder: ")
+
+# Convert the input to an integer (assuming the input is a whole number)
+n = int(n)
+
+# Calculate the distance of the storm in miles and round it to two decimal places
+distance = round(n / 5, 2)
+
+# Output the result
+print(f"The storm is {distance} miles away.")
 

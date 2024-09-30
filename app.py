@@ -106,5 +106,8 @@
 # for j in ['Jen', 'Eli', "Sam"]:
 #     print(j + ", how are you?")
 
-for j in range(2,7,2):
+# for j in range(2,7,2):
+#     print(j)
+
+for j in range(10,6,-1):
     print(j)

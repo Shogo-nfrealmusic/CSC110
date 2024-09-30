@@ -103,5 +103,8 @@
 #     print(j)
 # print('done')
 
-for j in ['Jen', 'Eli', "Sam"]:
-    print(j + ", how are you?")
+# for j in ['Jen', 'Eli', "Sam"]:
+#     print(j + ", how are you?")
+
+for j in range(2,7,2):
+    print(j)

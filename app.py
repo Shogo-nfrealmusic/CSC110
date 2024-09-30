@@ -81,5 +81,27 @@
 # cost = 250
 # print('That bike costs ' + str(250) + "$")
 
-n = "12324134123432412343234321431243214312543215"
-print(len(n))
+# n = "12324134123432412343234321431243214312543215"
+# print(len(n))
+
+# hr_cyc = float(input("How many hours did you do Cycling?: "))
+# hr_run = float(input("How many hours did you do running?: "))
+# hr_swim = float(input("How many hours did you do swimming?: "))
+
+# total = (hr_cyc * 200) + (hr_run * 475) + (hr_swim * 275)
+# print("total: " ,total)
+
+# weight = total/3500
+
+# print('Weight lost=', round(weight, 1), "lb")
+
+# for j in range(5):
+#     print("Welcome to CSC110")
+
+# for j in ["q", 2/3, 3, 4**2, "hello"]:
+#     print('j')
+#     print(j)
+# print('done')
+
+for j in ['Jen', 'Eli', "Sam"]:
+    print(j + ", how are you?")

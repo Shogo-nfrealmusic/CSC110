@@ -109,5 +109,35 @@
 # for j in range(2,7,2):
 #     print(j)
 
-for j in range(10,6,-1):
-    print(j)
+# for j in range(10,6,-1):
+#     print(j)
+
+# for j in range(2,6):
+#     print(j ** 2)
+
+# import turtle
+# sal=turtle.Turtle()
+
+# for k in range(4):
+#     sal.forward(100)
+#     sal.left(90)
+#     sal.forward(40)
+#     sal.left(90)
+#     sal.forward(100)
+#     sal.right(90)
+
+
+#1
+s = "Sakura"
+a = "Anh"
+k = "shogo"
+print(f'The students in our team are {s} and {a} and {k}')
+
+#2
+cents = int(input("How many cents you want to change?: "))
+q = cents//25
+n = (cents - 25 *q) // 5
+p = (cents -25 * q - 5*n)
+print(f'You can receive {q} quarter(s) and {n} Nikel(s) and {p} Penny(s)')
+
+    

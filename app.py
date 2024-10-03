@@ -128,16 +128,23 @@
 
 
 #1
-s = "Sakura"
-a = "Anh"
-k = "shogo"
-print(f'The students in our team are {s} and {a} and {k}')
+# s = "Sakura"
+# a = "Anh"
+# k = "shogo"
+# print(f'The students in our team are {s} and {a} and {k}')
 
-#2
-cents = int(input("How many cents you want to change?: "))
-q = cents//25
-n = (cents - 25 *q) // 5
-p = (cents -25 * q - 5*n)
-print(f'You can receive {q} quarter(s) and {n} Nikel(s) and {p} Penny(s)')
+# #2
+# cents = int(input("How many cents you want to change?: "))
+# q = cents//25
+# n = (cents - 25 *q) // 5
+# p = (cents -25 * q - 5*n)
+# print(f'You can receive {q} quarter(s) and {n} Nikel(s) and {p} Penny(s)')
 
+mylist = [6, -2, 1, 3]
+sum = 0
+for j in mylist:
+    sum = sum + j
+    average = sum / len(mylist)
+print("Sum", sum)  
+print("Average", average)  
     

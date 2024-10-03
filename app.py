@@ -140,11 +140,31 @@
 # p = (cents -25 * q - 5*n)
 # print(f'You can receive {q} quarter(s) and {n} Nikel(s) and {p} Penny(s)')
 
-mylist = [6, -2, 1, 3]
-sum = 0
-for j in mylist:
-    sum = sum + j
-    average = sum / len(mylist)
-print("Sum", sum)  
-print("Average", average)  
+# mylist = [6, -2, 1, 3]
+# sum = 0
+# for j in mylist:
+#     sum = sum + j
+#     average = sum / len(mylist)
+# print("Sum", sum)  
+# print("Average", average)  
+
+# sum = 0
+# for j in range(1, 101):
+#     sum = sum + j
+# print(sum)
+
+# N=100
+# sum_acc = 0 
+# for j in range(N + 1):
+#     sum_acc = sum_acc + j
+# print(f'Sum {sum_acc}')
+
+# print(N*(N+1)/2)
     
+sum_harmonic = 0
+
+for i in range(1, 101):
+    sum_harmonic += 1 / i
+
+result = round(sum_harmonic, 5)
+print(result)

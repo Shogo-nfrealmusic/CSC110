@@ -219,6 +219,56 @@
 # # 結果を表示する
 # print(result)
 
-x=3
-y=5
-print("There are ", str(x), "dogs and", str(y), "cats.")
+# x=3
+# y=5
+# print("There are ", str(x), "dogs and", str(y), "cats.")
+
+# import turtle
+
+# alex = turtle.Turtle()
+
+# for k in range(4):
+#     alex.forward(100)
+#     alex.left(90)
+    
+
+# import turtle
+
+# alex = turtle.Turtle()
+
+# alex.speed(0)
+# for k in range(1,25):
+#     alex.forward(k*7)  
+#     alex.left(90)  
+
+# turtle.done()
+
+import turtle
+wn = turtle.Screen()
+gwen = turtle.Turtle()
+
+wn.bgcolor("light green")
+gwen.shape("turtle")
+gwen.pensize(3)
+gwen.color("blue")
+
+gwen.stamp()  # 印を中央に配置し、東を向く
+gwen.penup()
+
+dist = 150
+
+for i in range(12):
+    gwen.forward(dist)
+
+    gwen.pendown()
+    gwen.forward(10)  
+    gwen.penup()
+    gwen.forward(10)
+
+    gwen.stamp()  
+
+    gwen.goto(0, 0)  
+
+    gwen.left(360 / 12) 
+
+

@@ -243,32 +243,306 @@
 
 # turtle.done()
 
+# import turtle
+# wn = turtle.Screen()
+# gwen = turtle.Turtle()
+
+# wn.bgcolor("light green")
+# gwen.shape("turtle")
+# gwen.pensize(3)
+# gwen.color("blue")
+
+# gwen.stamp()  
+# gwen.penup()
+
+# dist = 150
+
+# for i in range(12):
+#     gwen.forward(dist)
+
+#     gwen.pendown()
+#     gwen.forward(10)  
+#     gwen.penup()
+#     gwen.forward(10)
+
+#     gwen.stamp()  
+
+#     gwen.goto(0, 0)  
+
+#     gwen.left(360 / 12) 
+
+
+# import turtle
+# wn = turtle.Screen()
+# tracy = turtle.Turtle()
+
+# # draw a cross
+# long = 100
+# short = 40
+
+# # add colors to lines
+# for n in ["black", "blue", "red", "lightgreen"]:
+#     tracy.color(n)
+#     tracy.forward(long)
+#     tracy.left(90)
+#     tracy.forward(short)
+#     tracy.left(90)
+#     tracy.forward(long)
+#     tracy.right(90)
+
+# import turtle
+
+# # ウィンドウとタートルの設定
+# wn = turtle.Screen()
+# tracy = turtle.Turtle()
+
+# # 十字架のサイズを定義
+# long = 100
+# short = 40
+
+# # 塗りつぶしの色をマゼンタに設定
+# tracy.fillcolor("magenta")
+
+# # 塗りつぶしの開始
+# tracy.begin_fill()
+
+# # 線の色を変えながら十字架を描画
+# for n in ["black", "blue", "red", "lightgreen"]:
+#     tracy.color(n)
+#     tracy.forward(long)
+#     tracy.left(90)
+#     tracy.forward(short)
+#     tracy.left(90)
+#     tracy.forward(long)
+#     tracy.right(90)
+
+# # 塗りつぶしの終了
+# tracy.end_fill()
+
+# # 終了処理（ウィンドウをクリックで閉じる）
+# wn.mainloop()
+
+
+
+
+# import turtle
+
+# # ウィンドウとタートルの設定
+# wn = turtle.Screen()
+# tracy = turtle.Turtle()
+# tracy.speed(3)  # 描画速度を調整
+# tracy.pensize(3)
+
+# colors = ["blue", "magenta", "yellow", "orange", "green"]
+
+# long_length = 100  
+# short_length = 40  
+# outer_angle = 30  
+# inner_angle = 60  
+
+# tracy.color("black")
+# tracy.setheading(180)  
+# tracy.forward(long_length)
+
+# for i in range(0, len(colors)):
+#     tracy.color(colors[i])
+    
+#     tracy.right(outer_angle)
+#     tracy.forward(short_length)
+    
+#     tracy.left(inner_angle)
+#     tracy.forward(short_length)
+# tracy.setheading(0)  
+# tracy.color("black")
+# tracy.forward(long_length)
+
+# wn.mainloop()
+
+# Got itifasdfdaskfdsa;kfkldsajfljdsaklfjads;kljfkdjsaklf;jdsakljfkldsajfkdasjfadsfkdasjfkl;adsfjdsakf
+# import turtle
+
+# wn = turtle.Screen()
+# tracy = turtle.Turtle()
+# tracy.speed(3)  
+# tracy.pensize(3)
+
+# colors = ["blue", "magenta", "yellow", "orange", "green"]
+
+# long_length = 100  # 最初と最後の水平線の長さ
+# short_length = 40  # 短い斜めの線の長さ
+# outer_angle = 30  # 外側の角度 30度
+# inner_angle = 60  # 内側の角度 60度
+
+# tracy.color("black")
+# tracy.setheading(180)  
+# tracy.forward(long_length)
+
+# # ジグザグ部分を描く（垂直に下方向へ進む）
+# # for i in range(len(colors)):
+# #     tracy.color(colors[i])
+    
+# tracy.left(180 - outer_angle)
+# tracy.forward(short_length)
+    
+# tracy.right(180 - inner_angle)
+# tracy.forward(short_length)
+
+# tracy.left(180 - inner_angle)
+# tracy.forward(short_length)
+
+# tracy.right(180 - inner_angle)
+# tracy.forward(short_length)
+# tracy.left(180 - inner_angle)
+# tracy.forward(short_length)
+
+# tracy.right(180 - inner_angle)
+# tracy.forward(short_length)
+
+# tracy.left(180 - inner_angle)
+# tracy.forward(short_length)
+
+# tracy.right(180 - inner_angle)
+# tracy.forward(short_length)
+
+# tracy.left(180 - inner_angle)
+# tracy.forward(short_length)
+
+# tracy.right(180 - inner_angle)
+# tracy.forward(short_length)
+
+
+
+# tracy.setheading(0)  
+# tracy.color("black")
+# tracy.forward(long_length)
+
+
+# wn.mainloop()
+
+# import turtle
+
+# # ウィンドウとタートルの設定
+# wn = turtle.Screen()
+# tracy = turtle.Turtle()
+# tracy.speed(3)  # 描画速度を調整
+# tracy.pensize(3)
+
+# # 各ジグザグの色のリスト
+# colors = ["blue", "magenta", "yellow", "orange", "green"]
+
+# # 線の長さと角度の設定
+# long_length = 100  # 最初と最後の水平線の長さ
+# short_length = 40  # 短い斜めの線の長さ
+# outer_angle = 30  # 外側の角度 30度
+# inner_angle = 60  # 内側の角度 60度
+
+# # 最初の黒い線を左向きに描く（西）
+# tracy.color("black")
+# tracy.setheading(180)  # 西（左）向きに設定
+# tracy.forward(long_length)
+
+# # ジグザグ部分を描く（垂直に下方向へ進む）
+# for color in colors:
+#     tracy.color(color)
+    
+#     # 30度で左に傾きながら下に進む
+#     tracy.left(180 - outer_angle)
+#     tracy.forward(short_length)
+    
+#     # 60度で右に傾きながらさらに下に進む
+#     tracy.right(180 - inner_angle)
+#     tracy.forward(short_length)
+
+# # 最後の黒い線を右向きに描く（東）
+# tracy.setheading(0)  # 東（右）向きにセット
+# tracy.color("black")
+# tracy.forward(long_length)
+
+# # ウィンドウを閉じないように待機
+# wn.mainloop()
+
+# import turtle
+
+# wn = turtle.Screen()
+# tracy = turtle.Turtle()
+# tracy.speed(3) 
+# tracy.pensize(3)
+
+
+# colors = ["blue", "magenta", "yellow", "orange", "green"]
+
+
+# long_length = 100  # 最初と最後の水平線の長さ
+# short_length = 40  # 短い斜めの線の長さ
+# outer_angle = 30  # 外側の角度 30度
+# inner_angle = 60  # 内側の角度 60度
+
+
+# tracy.color("black")
+# tracy.setheading(180)  
+# tracy.forward(long_length)
+
+# tracy.color(colors[0])
+# tracy.left(180 - outer_angle)  
+# tracy.forward(short_length)
+# tracy.right(180 - inner_angle)  
+# tracy.forward(short_length)
+
+# tracy.color(colors[1])
+# tracy.left(180 - inner_angle)  
+# tracy.forward(short_length)
+# tracy.right(180 - inner_angle)  
+# tracy.forward(short_length)
+
+# tracy.color(colors[2])
+# tracy.left(180 - inner_angle)  
+# tracy.forward(short_length)
+# tracy.right(180 - inner_angle)  
+# tracy.forward(short_length)
+
+# tracy.color(colors[3])
+# tracy.left(180 - inner_angle)  
+# tracy.forward(short_length)
+# tracy.right(180 - inner_angle)  
+# tracy.forward(short_length)
+
+# tracy.color(colors[4])
+# tracy.left(180 - inner_angle)  
+# tracy.forward(short_length)
+# tracy.right(180 - inner_angle)  
+# tracy.forward(short_length)
+
+# tracy.setheading(0)  
+# tracy.color("black")
+# tracy.forward(long_length)
+
+# wn.mainloop()
+
+
 import turtle
+
 wn = turtle.Screen()
 gwen = turtle.Turtle()
 
-wn.bgcolor("light green")
-gwen.shape("turtle")
-gwen.pensize(3)
-gwen.color("blue")
+wn.bgcolor("light green")  
+gwen.shape("turtle")  
+gwen.pensize(3)  
+gwen.color("blue")  
 
-gwen.stamp()  
-gwen.penup()
+gwen.penup()  
 
-dist = 150
+dist = 150  
 
-for i in range(12):
-    gwen.forward(dist)
-
-    gwen.pendown()
-    gwen.forward(10)  
-    gwen.penup()
-    gwen.forward(10)
-
+for i in range(10):
+    gwen.forward(dist)  
+    
+    gwen.left(90)  
     gwen.stamp()  
+    
+    gwen.right(90)  
+    gwen.goto(0, 0) 
+    gwen.left(360 / 10)  
 
-    gwen.goto(0, 0)  
+gwen.hideturtle()
 
-    gwen.left(360 / 12) 
-
-
+turtle.done()

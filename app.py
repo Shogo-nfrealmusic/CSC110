@@ -160,11 +160,65 @@
 # print(f'Sum {sum_acc}')
 
 # print(N*(N+1)/2)
-    
-sum_harmonic = 0
 
-for i in range(1, 101):
-    sum_harmonic += 1 / i
+# N = 100
+# sum_harmonic = 0
 
-result = round(sum_harmonic, 5)
-print(result)
+# for i in range(1, N+1):
+#     sum_harmonic += 1 / i
+
+# result = round(sum_harmonic, 5)
+# print(result)
+
+# print(list(range(5,0)))
+# a = 1
+# for i in range(1,3):
+#     a = a + 2
+#     b = 3 * i
+#     print(i, a, b)
+# x = 3
+# for i in range(2):
+#     y = 3 + x
+#     x = x - y
+#     print(i, x, y)
+
+# for i in ['hi', 'bye']:
+#     print(i)
+# for i in ['hi', 'bye']:
+#     print('i')
+
+# print(17%3)
+
+# import turtle
+
+# sam=turtle.Turtle()
+
+# sam.left(90)
+# sam.forward(100)
+# sam.left(90)
+# sam.forward(40)
+# sam.right(30)
+# sam.forward(100)
+
+# myList=["cat", "hamster", "dog"]
+# for animal in myList:
+#     print(f"I have a {animal}")
+
+# for i in range(2):
+#     print('HEllo')
+
+# for i in [2]:
+#     print("Hello")
+
+# # ユーザーに整数を入力してもらう
+# user_input = int(input("number: "))
+
+# # 入力された数に10を足す
+# result = user_input + 10
+
+# # 結果を表示する
+# print(result)
+
+x=3
+y=5
+print("There are ", str(x), "dogs and", str(y), "cats.")

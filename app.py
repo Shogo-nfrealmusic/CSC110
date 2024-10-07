@@ -252,7 +252,7 @@ gwen.shape("turtle")
 gwen.pensize(3)
 gwen.color("blue")
 
-gwen.stamp()  # 印を中央に配置し、東を向く
+gwen.stamp()  
 gwen.penup()
 
 dist = 150

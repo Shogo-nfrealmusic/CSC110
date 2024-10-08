@@ -519,30 +519,59 @@
 # wn.mainloop()
 
 
+# import turtle
+
+# wn = turtle.Screen()
+# gwen = turtle.Turtle()
+
+# wn.bgcolor("light green")  
+# gwen.shape("turtle")  
+# gwen.pensize(3)  
+# gwen.color("blue")  
+
+# gwen.penup()  
+
+# dist = 150  
+
+# for i in range(10):
+#     gwen.forward(dist)  
+    
+#     gwen.left(90)  
+#     gwen.stamp()  
+    
+#     gwen.right(90)  
+#     gwen.goto(0, 0) 
+#     gwen.left(360 / 10)  
+
+# gwen.hideturtle()
+
+# turtle.done()
+
 import turtle
-
+leo = turtle.Turtle()
 wn = turtle.Screen()
-gwen = turtle.Turtle()
+leo.speed(5) 
+leo.pensize(3)
 
-wn.bgcolor("light green")  
-gwen.shape("turtle")  
-gwen.pensize(3)  
-gwen.color("blue")  
+l_length = 100  
+m_length = 50
+s_length = 35
+l_angle = 60
+s_angle = 30
+m_angle = 90
 
-gwen.penup()  
-
-dist = 150  
-
-for i in range(10):
-    gwen.forward(dist)  
+for j in range(1, 5):
+    for k in range(5):
+        leo.left(s_angle)
+        leo.forward(l_length)
+        leo.right(180- l_angle)
+        leo.forward(m_length)
+        leo.right(m_angle)
+        leo.forward(s_length)
+        leo.left(180)
+    leo.penup()
+    leo.goto(0, -60*j)
+    leo.pendown()
     
-    gwen.left(90)  
-    gwen.stamp()  
-    
-    gwen.right(90)  
-    gwen.goto(0, 0) 
-    gwen.left(360 / 10)  
 
-gwen.hideturtle()
-
-turtle.done()
+wn.mainloop()

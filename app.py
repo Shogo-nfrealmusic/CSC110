@@ -547,31 +547,34 @@
 
 # turtle.done()
 
-import turtle
-leo = turtle.Turtle()
-wn = turtle.Screen()
-leo.speed(5) 
-leo.pensize(3)
+# import turtle
+# leo = turtle.Turtle()
+# wn = turtle.Screen()
+# leo.speed(5) 
+# leo.pensize(3)
 
-l_length = 100  
-m_length = 50
-s_length = 35
-l_angle = 60
-s_angle = 30
-m_angle = 90
+# l_length = 100  
+# m_length = 50
+# s_length = 35
+# l_angle = 60
+# s_angle = 30
+# m_angle = 90
 
-for j in range(1, 5):
-    for k in range(5):
-        leo.left(s_angle)
-        leo.forward(l_length)
-        leo.right(180- l_angle)
-        leo.forward(m_length)
-        leo.right(m_angle)
-        leo.forward(s_length)
-        leo.left(180)
-    leo.penup()
-    leo.goto(0, -60*j)
-    leo.pendown()
+# for j in range(1, 5):
+#     for k in range(5):
+#         leo.left(s_angle)
+#         leo.forward(l_length)
+#         leo.right(180- l_angle)
+#         leo.forward(m_length)
+#         leo.right(m_angle)
+#         leo.forward(s_length)
+#         leo.left(180)
+#     leo.penup()
+#     leo.goto(0, -60*j)
+#     leo.pendown()
     
 
-wn.mainloop()
+# wn.mainloop()
+
+for j in range(5):
+    print(j, end=' ')

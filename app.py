@@ -659,10 +659,80 @@
 # deg_f = deg_c * (9 / 5) + 32
 
 
-deg_f = int(input("What is the temperature in Farenheit? "))
+# deg_f = int(input("What is the temperature in Farenheit? "))
 
-deg_c = (deg_f - 32) * (5 / 9) 
+# deg_c = (deg_f - 32) * (5 / 9) 
 
-print(deg_f, " degrees Farenheit is", deg_c, " degrees Celsius.")
+# print(deg_f, " degrees Farenheit is", deg_c, " degrees Celsius.")
+
+# for i in range(100):
+#     print("We like Python's turtles!")
+
+# for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December']:
+#     print("One of the months of the year is", amonth)
+
+# numbers = [12, 10, 32, 3, 66, 17, 42, 99, 20]
+
+# # 各数字を新しい行に出力
+# for number in numbers:
+#     print(number)
+
+# numbers = [12, 10, 32, 3, 66, 17, 42, 99, 20]
+
+# # 各数字とその平方を新しい行に出力
+# for number in numbers:
+#     print(f"{number} - {number**2}")
+
+# draw an equilateral triangle
+# import turtle
+
+# wn = turtle.Screen()
+# norvig = turtle.Turtle()
+
+# for i in range(3):
+#     norvig.forward(100)
+
+#     # the angle of each vertice of a regular polygon
+#     # is 360 divided by the number of sides
+#     norvig.left(360/3)
+
+# wn.exitonclick()
+
+# draw a square
+# import turtle
+
+# wn = turtle.Screen()
+# kurzweil = turtle.Turtle()
+
+# for i in range(4):
+#     kurzweil.forward(100)
+#     kurzweil.left(360/4)
+
+# wn.exitonclick()
+
+# draw a hexagon
+# import turtle
+
+# wn = turtle.Screen()
+# dijkstra = turtle.Turtle()
+
+# for i in range(6):
+#     dijkstra.forward(100)
+#     dijkstra.left(360/6)
+
+# wn.exitonclick()
+
+# draw an octogon
+import turtle
+
+wn = turtle.Screen()
+knuth = turtle.Turtle()
+
+for i in range(8):
+    knuth.forward(75)
+    knuth.left(360/8)
+
+wn.exitonclick()
+
 
 

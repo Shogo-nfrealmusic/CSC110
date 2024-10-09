@@ -576,5 +576,93 @@
 
 # wn.mainloop()
 
-for j in range(5):
-    print(j, end=' ')
+# for j in range(5):
+#     print(j, end=' ')
+
+# ユーザーに現在の時刻を入力してもらう
+# current_time_string = input("What is the current time (in hours)? ")
+
+# # ユーザーに待機時間を入力してもらう
+# waiting_time_string = input("How many hours do you have to wait? ")
+
+# # 入力された文字列を整数に変換
+# current_time_int = int(current_time_string)
+# waiting_time_int = int(waiting_time_string)
+
+# # 現在の時刻に待機時間を足して、新しい時刻を計算
+# hours = current_time_int + waiting_time_int
+
+# # 24時間制の時間を計算
+# timeofday = hours % 24
+
+# # 計算されたアラーム時刻を出力
+# print(timeofday)
+
+# word1 = "All"
+# word2 = "work"
+# word3 = "and"
+# word4 = "no"
+# word5 = "play"
+# word6 = "makes"
+# word7 = "Jack"
+# word8 = "a"
+# word9 = "dull"
+# word10 = "boy."
+
+# print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
+
+# # ユーザーに出発する曜日（0～6）を入力してもらう
+# start_day = int(input("出発する曜日の番号を入力してください（0: 日曜日、1: 月曜日、2: 火曜日、... 6: 土曜日）: "))
+
+# # 滞在日数を入力してもらう
+# stay_length = int(input("滞在日数を入力してください: "))
+
+# # 帰宅する曜日を計算（曜日の範囲は0～6なので7で剰余を取る）
+# return_day = (start_day + stay_length) % 7
+
+# # 結果を出力
+# print(f"あなたが帰宅する曜日の番号は {return_day} です。")
+
+# P = 10000
+# n = 12
+# r = 0.08
+
+# t = int(input("Compound for how many years? "))
+
+# final = P * ((1 + (r/n))**n*t)
+
+# print ("The final amount after", t, "years is", final)
+
+# ( ((1 + (r/n)) ** (n * t)) )
+
+# width = int(input("Width? "))
+# height = int(input("Height? "))
+
+# area = width * height
+
+# print("The area of the rectangle is", area)
+
+# import math
+
+# # ユーザーに半径を入力してもらう
+# radius = float(input("円の半径を入力してください: "))
+
+# # 円の面積を計算（面積 = π * 半径^2）
+# area = math.pi * (radius ** 2)
+
+# # 結果を出力
+# print(f"半径 {radius} の円の面積は {area:.2f} です。")
+
+# deg_c = int(input("What is the temperature in Celsius? "))
+
+# # formula to convert C to F is: (degrees Celcius) times (9/5) plus (32)
+# deg_f = deg_c * (9 / 5) + 32
+
+
+deg_f = int(input("What is the temperature in Farenheit? "))
+
+deg_c = (deg_f - 32) * (5 / 9) 
+
+print(deg_f, " degrees Farenheit is", deg_c, " degrees Celsius.")
+
+

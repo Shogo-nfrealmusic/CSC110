@@ -1,3 +1,73 @@
+# import turtle
+# wn = turtle.Screen()
+# t = turtle.Turtle()
+# t.speed(0)
+
+# a,b,c = 100, 50, 35
+
+# for n in range(1,5):
+#     for i in range(5):
+#         t.left(30)
+#         t.forward(a)
+#         t.right(180-60)
+#         t.forward(b)
+#         t.left(90)
+#         t.backward(c)
+        
+#     t.penup()
+#     t.goto(0, -60 * n)
+#     t.pendown()
+    
+
+
+# wn.bgcolor("lightgreen")
+# t.shape("turtle")
+# t.pensize(3)
+# t.color("blue")
+
+# t.stamp()
+# t.penup()
+
+# dist = 150
+
+# for i in range(12):
+#     t.forward(dist)
+#     t.pendown()
+#     t.forward(10)
+#     t.penup()
+#     t.forward(10)
+#     t.stamp()
+#     t.goto(0,0)
+#     t.left(360/12)
+    
+
+# for i in range(1,25):
+#     t.forward(7 * i)
+#     t.left(90)
+
+
+
+# long = 100
+# short = 40
+
+# t.fillcolor("magenta")
+# t.begin_fill()
+
+# for i in range(4):
+#     t.forward(long)
+#     t.left(90)
+#     t.forward(short)
+#     t.left(90)
+#     t.forward(long)
+#     t.right(90)
+
+# t.end_fill()
+
+
+
+
+
+
 # x=10
 # y=2
 # z=x/y
@@ -723,16 +793,111 @@
 # wn.exitonclick()
 
 # draw an octogon
-import turtle
+# import turtle
 
-wn = turtle.Screen()
-knuth = turtle.Turtle()
+# wn = turtle.Screen()
+# knuth = turtle.Turtle()
 
-for i in range(8):
-    knuth.forward(75)
-    knuth.left(360/8)
+# for i in range(8):
+#     knuth.forward(75)
+#     knuth.left(360/8)
 
-wn.exitonclick()
+# wn.exitonclick()
+
+# import turtle
+
+# # ユーザー入力を最初に取得
+# num_sides = int(input("Enter the number of sides: "))  # 辺の数
+# side_length = int(input("Enter the length of each side: "))  # 辺の長さ
+# line_color = input("Enter the color of the polygon's outline: ")  # 枠線の色
+# fill_color = input("Enter the fill color of the polygon: ")  # 塗りつぶしの色
+
+# # ウィンドウとタートルの作成を後にする
+# wn = turtle.Screen()
+# polygon = turtle.Turtle()
+
+# # ペンの色と塗りつぶしの色を設定
+# polygon.color(line_color)
+# polygon.fillcolor(fill_color)
+
+# # 塗りつぶし開始
+# polygon.begin_fill()
+
+# # 正多角形を描画
+# for _ in range(num_sides):
+#     polygon.forward(side_length)
+#     polygon.left(360 / num_sides)
+
+# # 塗りつぶし終了
+# polygon.end_fill()
+
+# # ウィンドウをクリックで閉じる
+# wn.exitonclick()
+
+# import turtle
+
+# # ウィンドウを設定
+# wn = turtle.Screen()
+
+# # タートル（酔っぱらいの海賊）を作成
+# pirate = turtle.Turtle()
+
+# # 実験データ（角度のリスト）
+# angles = [160, -43, 270, -97, -43, 200, -940, 17, -86]
+
+# # 海賊が歩き回る
+# for angle in angles:
+#     pirate.left(angle)  # 左に回転（正の角度は反時計回り、負の角度は時計回り）
+#     pirate.forward(100)  # 100ステップ進む
+
+# # 現在のヘッディング（向き）を出力
+# print("The pirate's current heading is:", pirate.heading())
+
+# # ウィンドウをクリックで閉じる
+# wn.exitonclick()
+
+
+# import turtle
+
+# turing = turtle.Turtle()
+
+# for i in range(5):
+#     turing.forward(110)
+#     turing.left(216)
+
+# import turtle
+# wn = turtle.Screen()
+# k = turtle.Turtle()
+
+# wn.bgcolor("light green")
+# k.shape("turtle")
+# k.pensize(3)
+# k.color("blue")
+
+# k.stamp()
+# k.penup()
+# dist = 150
+
+# for i in range(12):
+#     k.forward(dist)
+#     k.pendown()
+#     k.forward(10)
+#     k.penup()
+#     k.forward(10)
+#     k.stamp()
+#     k.goto(0,0)
+#     k.left(360/12)
+
+# import turtle
+
+# tanenbaum = turtle.Turtle()
+
+# tanenbaum.hideturtle()
+# tanenbaum.speed(20)
+
+# for i in range(350):
+#     tanenbaum.forward(i)
+#     tanenbaum.right(98)
 
 
 

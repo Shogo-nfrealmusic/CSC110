@@ -1,3 +1,13 @@
+# age = 20
+# age = 30
+# print(age)
+
+# name = input("What is your name? ")
+# age = input("How old are you? ")
+# print(f'New patient {name} {age}years old')
+
+
+
 # import turtle
 # wn = turtle.Screen()
 # t = turtle.Turtle()
@@ -897,7 +907,23 @@
 
 # for i in range(350):
 #     tanenbaum.forward(i)
-#     tanenbaum.right(98)
+#     tanenbaum.right(9
+
+
+import turtle
+sal = turtle.Turtle()
+wn = turtle.Screen()
+
+d = 100
+
+for i in range(4):
+    sal.forward(d)
+    sal.right(180-60)
+    sal.forward(2 * d)
+    sal.left(30)
+    
+wn.exitonclick()
+
 
 
 

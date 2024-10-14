@@ -910,19 +910,46 @@
 #     tanenbaum.right(9
 
 
-import turtle
-sal = turtle.Turtle()
-wn = turtle.Screen()
+# import turtle
+# sal = turtle.Turtle()
+# wn = turtle.Screen()
 
-d = 100
+# d = 100
 
-for i in range(4):
-    sal.forward(d)
-    sal.right(180-60)
-    sal.forward(2 * d)
-    sal.left(30)
+# for i in range(4):
+#     sal.forward(d)
+#     sal.right(180-60)
+#     sal.forward(2 * d)
+#     sal.left(30)
     
-wn.exitonclick()
+# wn.exitonclick()
+
+# import random
+
+# print(random.randrange(6))
+
+# print(random.randint(1,5))
+
+# import random
+
+# print(random.random())
+
+import random
+
+# print(random.randint(1,6))
+
+# for i in range(10):
+#     print(random.randint(0,1))
+
+# for i in range(3):
+#     print(random.randint(1,6))
+
+# for i in range(10):
+#     print(random.random() * 5)
+    
+
+print(random.random() * 10 - 5)
+
 
 
 

@@ -948,7 +948,34 @@ import random
 #     print(random.random() * 5)
     
 
-print(random.random() * 10 - 5)
+# print(random.random() * 10 - 5)
+
+# def fahrenheit_to_celsius(fahrenheit):
+#     celsius = (fahrenheit - 32) * 5 / 9
+#     return celsius
+
+# # テスト例
+# fahrenheit_temp = 100  # 例えば華氏100度
+# celsius_temp = fahrenheit_to_celsius(fahrenheit_temp)
+# print(f"{fahrenheit_temp}F は {celsius_temp:.2f}C です。")
+
+def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+print(factorial(5))  
+
+def table_of_fact(n_rows):
+    for k in range(1, n_rows+1):
+        print(k, factorial(k))
+
+table_of_fact(10)
+
+    
+
+
 
 
 

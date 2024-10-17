@@ -959,19 +959,53 @@ import random
 # celsius_temp = fahrenheit_to_celsius(fahrenheit_temp)
 # print(f"{fahrenheit_temp}F は {celsius_temp:.2f}C です。")
 
+# def factorial(n):
+#     result = 1
+#     for i in range(1, n + 1):
+#         result *= i
+#     return result
+
+# print(factorial(5))  
+
+# def table_of_fact(n_rows):
+#     for k in range(1, n_rows+1):
+#         print(k, factorial(k))
+
+# table_of_fact(10)
+
+# import turtle
+
+# def triangle(t, side, color):
+#     t.fillcolor(color)
+#     t.begin_fill()
+#     for i in range(3):
+#         t.forward(side)
+#         t.left(120)
+#     t.end_fill()
+        
+# leo = turtle.Turtle()
+# length=70
+# for k in ["yellow", "blue", "red"]:
+#     triangle(leo, length, k)
+#     leo.forward(length)
+
+# turtle.done()  # ウィンドウが閉じないようにします
+
+import math
+
 def factorial(n):
-    result = 1
-    for i in range(1, n + 1):
-        result *= i
-    return result
+    f = 1
+    for j in range(1 , n + 1):
+        f=f*j
+    return f
+def e_x_series(x , n):
+    sum_accu=0
+    for k in range(n):
+        sum_accu=sum_accu + x**k / factorial(k)
+    return sum_accu
 
-print(factorial(5))  
-
-def table_of_fact(n_rows):
-    for k in range(1, n_rows+1):
-        print(k, factorial(k))
-
-table_of_fact(10)
+print(e_x_series(1,10))
+print(math.e)
 
     
 

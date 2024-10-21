@@ -991,21 +991,29 @@ import random
 
 # turtle.done()  # ウィンドウが閉じないようにします
 
-import math
+# import math
 
-def factorial(n):
-    f = 1
-    for j in range(1 , n + 1):
-        f=f*j
-    return f
-def e_x_series(x , n):
-    sum_accu=0
-    for k in range(n):
-        sum_accu=sum_accu + x**k / factorial(k)
-    return sum_accu
+# def factorial(n):
+#     f = 1
+#     for j in range(1 , n + 1):
+#         f=f*j
+#     return f
+# def e_x_series(x , n):
+#     sum_accu=0
+#     for k in range(n):
+#         sum_accu=sum_accu + x**k / factorial(k)
+#     return sum_accu
 
-print(e_x_series(1,10))
-print(math.e)
+# print(e_x_series(1,10))
+# print(math.e)
+
+x = 2
+y = 3
+var = x < y
+print(var)
+
+x = 5
+print((3 + x) < 7)
 
     
 

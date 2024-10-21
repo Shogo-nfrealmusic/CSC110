@@ -1007,13 +1007,43 @@ import random
 # print(e_x_series(1,10))
 # print(math.e)
 
-x = 2
-y = 3
-var = x < y
-print(var)
+# x = 2
+# y = 3
+# var = x < y
+# print(var)
 
-x = 5
-print((3 + x) < 7)
+# x = 5
+# print((3 + x) < 7)
+
+# f1 = 0
+# f2 = 1
+# fList = [f1, f2]
+# # print(f1, f2)
+
+# for i in range(8):
+#     fsum = f1 + f2
+#     f1 = f2
+#     f2 = fsum
+#     fList.append(fsum)
+    
+# print(fList)
+
+def fibonacci(Nfib):
+    f1 = 0
+    f2 = 1
+    fList = [f1, f2]
+
+    for i in range(8):
+        fsum = f1 + f2
+        f1 = f2
+        f2 = fsum
+        fList.append(fsum)
+        
+    return fList
+
+result = fibonacci(8)
+print(result)
+    
 
     
 

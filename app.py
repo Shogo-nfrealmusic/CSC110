@@ -1028,21 +1028,26 @@ import random
     
 # print(fList)
 
-def fibonacci(Nfib):
-    f1 = 0
-    f2 = 1
-    fList = [f1, f2]
+# def fibonacci(Nfib):
+#     f1 = 0
+#     f2 = 1
+#     fList = [f1, f2]
 
-    for i in range(8):
-        fsum = f1 + f2
-        f1 = f2
-        f2 = fsum
-        fList.append(fsum)
+#     for i in range(8):
+#         fsum = f1 + f2
+#         f1 = f2
+#         f2 = fsum
+#         fList.append(fsum)
         
-    return fList
+#     return fList
 
-result = fibonacci(8)
-print(result)
+# result = fibonacci(8)
+# print(result)
+# print(sum(result))
+
+animals = ["cat", "dog", "rabbit"]
+animals.append("guinea  pig")
+print(f'Update animals list: {animals}')
     
 
     

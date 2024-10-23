@@ -1045,9 +1045,375 @@ import random
 # print(result)
 # print(sum(result))
 
-animals = ["cat", "dog", "rabbit"]
-animals.append("guinea  pig")
-print(f'Update animals list: {animals}')
+# animals = ["cat", "dog", "rabbit"]
+# animals.append("guinea  pig")
+# print(f'Update animals list: {animals}')
+
+# def febonacci(num):
+#     f1 = 0
+#     f2 = 1
+#     fList = [f1, f2]
+    
+#     for i in range(num):
+#         fsum = f1 + f2
+#         f1 = f2
+#         f2 = fsum
+#         fList.append(fsum)
+    
+#     return fList
+# result = febonacci(8)
+# print(result)
+
+# num1 = float(input("Enter number: "))
+# num2 = float(input("Enter number: "))
+
+# if(num1 > num2):
+#     print(f'largerValue = {num1}')
+# else:
+#     print(f'largerValue = {num2}')
+
+# evens = []
+# odds = []
+# others = []
+
+# for i in range(1, 21):
+#     if i % 2 == 0:
+#         evens.append(str(i))
+#     elif i % 3 == 0:
+#         odds.append(str(i))
+#     else:
+#         others.append(str(i))
+
+# print("even:", " ".join(evens))
+# print("odds:", " ".join(odds))
+# print("others:", " ".join(others))
+
+# both = []
+# either = []
+# neither = []
+
+# for n in range(1, 21):
+#     if n % 2 == 0 and n % 3 == 0:
+#         both.append(str(n))
+
+# for n in range(1, 21):
+#     if n % 2 == 0 or n % 3 == 0:
+#         either.append(str(n))
+
+# for n in range(1, 21):
+#     if not (n % 2 == 0 or n % 3 == 0):
+#         neither.append(str(n))
+
+# print("Both (divisible by 2 and 3):", " ".join(both))
+# print("--------------------------")
+# print("Either (divisible by 2 or 3):", " ".join(either))
+# print("--------------------------")
+# print("Neither (not divisible by 2 or 3):", " ".join(neither))
+
+
+
+# import turtle
+# t = turtle.Turtle()
+# screen = turtle.Screen()
+# t.speed(5)
+# sz = 50
+
+# def draw_square(t, sz):
+#     for _ in range(4):
+#         t.forward(sz)
+#         t.right(90)
+
+# def draw_cube_net(t, sz):
+    
+#     # 中央の正方形を描く
+#     draw_square(t, sz)
+    
+#     # 上の正方形を描く
+#     t.penup()
+#     t.goto(0, sz)
+#     t.pendown()
+#     draw_square(t, sz)
+    
+#     # 下の正方形を描く
+#     t.penup()
+#     t.goto(0, -sz)
+#     t.pendown()
+#     draw_square(t, sz)
+    
+#     # 左の正方形を描く
+#     t.penup()
+#     t.goto(-sz, 0)
+#     t.pendown()
+#     draw_square(t, sz)
+    
+#     # 右の正方形を描く
+#     t.penup()
+#     t.goto(sz, 0)
+#     t.pendown()
+#     draw_square(t, sz)
+    
+#     # 下の下に正方形を描く
+#     t.penup()
+#     t.goto(0, -2 * sz)
+#     t.pendown()
+#     draw_square(t, sz)
+    
+
+# import turtle
+# t = turtle.Turtle()
+# screen = turtle.Screen()
+# t.speed(5)
+# sz = 50
+
+# def draw_square(t, sz):
+#     for _ in range(4):
+#         t.forward(sz)
+#         t.right(90)
+        
+# def draw_tab(t,sz):
+#     t.forward(sz)
+#     t.left(120)
+#     t.forward()
+    
+
+# def draw_cube_net(t, sz):
+    
+#     # 中央の正方形を描く
+#     draw_square(t, sz)
+    
+#     # 上の正方形を描く
+#     t.penup()
+#     t.goto(0, sz)
+#     t.pendown()
+#     draw_square(t, sz)
+    
+#     # 下の正方形を描く
+#     t.penup()
+#     t.goto(0, -sz)
+#     t.pendown()
+#     draw_square(t, sz)
+    
+#     # 左の正方形を描く
+#     t.penup()
+#     t.goto(-sz, 0)
+#     t.pendown()
+#     draw_square(t, sz)
+    
+#     # 右の正方形を描く
+#     t.penup()
+#     t.goto(sz, 0)
+#     t.pendown()
+#     draw_square(t, sz)
+    
+#     # 下の下に正方形を描く
+#     t.penup()
+#     t.goto(0, -2 * sz)
+#     t.pendown()
+#     draw_square(t, sz)
+    
+
+# import turtle
+# t = turtle.Turtle()
+# screen = turtle.Screen()
+
+# def draw_square(t, sz):
+#     for _ in range(4):
+#         t.forward(sz)
+#         t.right(90)
+
+# def draw_cube_net(t, sz):
+    
+#     draw_square(t, sz)
+    
+#     t.penup()
+#     t.goto(0, sz)
+#     t.pendown()
+#     draw_square(t, sz)
+    
+#     t.penup()
+#     t.goto(0, -sz)
+#     t.pendown()
+#     draw_square(t, sz)
+    
+#     t.penup()
+#     t.goto(-sz, 0)
+#     t.pendown()
+#     draw_square(t, sz)
+    
+#     t.penup()
+#     t.goto(sz, 0)
+#     t.pendown()
+#     draw_square(t, sz)
+    
+#     t.penup()
+#     t.goto(0, 2 * sz)
+#     t.pendown()
+#     draw_square(t, sz)
+
+# def cubeTab(t,sz,L):
+#     import math
+#     t.left(60)
+#     t.forward(L)
+#     t.right(60)
+#     t.forward(sz-2*L*math.cos(math.radians(60)))
+#     t.right(60)
+#     t.forward(L)
+    
+
+# sz = 50
+# L = 10
+# draw_cube_net(t, sz)
+# t.goto(0, sz*2)
+# cubeTab(t, sz, L)
+# t.right(210)
+# t.penup()
+# t.goto(0, 0)
+# t.pendown()
+# cubeTab(t, sz, L)
+# t.right(120)
+# t.penup()
+# t.goto(sz, sz)
+# t.pendown()
+# cubeTab(t, sz, L)
+# t.right(120)
+# t.penup()
+# t.goto(-sz, -sz)
+# t.pendown()
+# cubeTab(t, sz, L)
+# t.right(120)
+# t.penup()
+# t.goto(sz * 2, 0)
+# t.pendown()
+# cubeTab(t, sz, L)
+# t.right(120)
+# t.penup()
+# t.goto(0, -sz * 2)
+# t.pendown()
+# cubeTab(t, sz, L)
+# t.right(120)
+# t.penup()
+# t.goto(sz, -sz)
+# t.pendown()
+# cubeTab(t, sz, L)
+
+
+# turtle.done()
+
+
+
+# def square(t,sz):
+#     for i in range(4):
+#         t.forward(sz)
+#         t.left(90)
+
+# def cubeTab(t,sz,L):
+#     import math
+#     t.goto(0,sz)
+#     t.left(60)
+#     t.forward(L)
+#     t.right(60)
+#     t.forward(sz-2*L*math.cos(math.radians(60)))
+#     t.right(60)
+#     t.forward(L)
+
+# def B_tabs(t,sz,L):
+#     # t.speed(5)
+#     t.up()
+#     t.goto(0,0)
+#     t.right(30)
+#     t.down()
+#     square(t, sz)
+#     t.forward(sz)
+#     cubeTab(t, sz , L)
+#     # t.left(60)
+#     # t.down()
+#     # for i in range(3):
+#     #     t.right(90)
+#     #     t.forward(sz)
+#     # t.left(120)
+#     # t.forward(L)
+#     # t.left(60)
+#     # t.forward(sz-2*L*math.cos(math.radians(60)))
+#     # t.left(60)
+#     # t.forward(L)
+
+#     # t.left(30)
+#     # t.forward(sz)
+#     # t.left(30)
+#     # t.forward(L)
+#     # t.left(60)
+#     # t.forward(sz-2*L*math.cos(math.radians(60)))
+#     # t.left(60)
+#     # t.forward(L)
+    
+# import turtle
+# import math
+# t = turtle.Turtle()
+# square(t,100)
+# cubeTab(t,100,10)
+# B_tabs(t,100,10)
+# turtle.done()
+
+import turtle
+import math
+
+t = turtle.Turtle()
+screen = turtle.Screen()
+t.speed(0)  
+
+def draw_square(t, sz):
+    for _ in range(4):
+        t.forward(sz)
+        t.right(90)
+
+def draw_cube_net(t, sz):
+    draw_square(t, sz)
+    
+    positions = [(0, sz), (0, -sz), (-sz, 0), (sz, 0), (0, 2 * sz)]
+    for x, y in positions:
+        t.penup()
+        t.goto(x, y)
+        t.pendown()
+        draw_square(t, sz)
+
+def cubeTab(t, sz, L):
+    t.left(60)
+    t.forward(L)
+    t.right(60)
+    t.forward(sz - 2 * L * math.cos(math.radians(60)))
+    t.right(60)
+    t.forward(L)
+
+sz = 50
+L = 10
+
+draw_cube_net(t, sz)
+
+tab_positions = [
+    (0, sz * 2, 0), (0, 0, 210), (sz, sz, 120),
+    (-sz, -sz, 120), (sz * 2, 0, 120), (0, -sz * 2, 120), (sz, -sz, 120)
+]
+
+for x, y, angle in tab_positions:
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.right(angle)
+    cubeTab(t, sz, L)
+
+turtle.done()
+
+
+   
+
+
+   
+
+
+
+
+        
+
     
 
     

@@ -1354,54 +1354,85 @@ import random
 # B_tabs(t,100,10)
 # turtle.done()
 
-import turtle
-import math
+# import turtle
+# import math
 
-t = turtle.Turtle()
-screen = turtle.Screen()
-t.speed(0)  
+# t = turtle.Turtle()
+# screen = turtle.Screen()
+# t.speed(0)  
 
-def draw_square(t, sz):
-    for _ in range(4):
-        t.forward(sz)
-        t.right(90)
+# def draw_square(t, sz):
+#     for _ in range(4):
+#         t.forward(sz)
+#         t.right(90)
 
-def draw_cube_net(t, sz):
-    draw_square(t, sz)
+# def draw_cube_net(t, sz):
+#     draw_square(t, sz)
     
-    positions = [(0, sz), (0, -sz), (-sz, 0), (sz, 0), (0, 2 * sz)]
-    for x, y in positions:
-        t.penup()
-        t.goto(x, y)
-        t.pendown()
-        draw_square(t, sz)
+#     positions = [(0, sz), (0, -sz), (-sz, 0), (sz, 0), (0, 2 * sz)]
+#     for x, y in positions:
+#         t.penup()
+#         t.goto(x, y)
+#         t.pendown()
+#         draw_square(t, sz)
 
-def cubeTab(t, sz, L):
-    t.left(60)
-    t.forward(L)
-    t.right(60)
-    t.forward(sz - 2 * L * math.cos(math.radians(60)))
-    t.right(60)
-    t.forward(L)
+# def cubeTab(t, sz, L):
+#     t.left(60)
+#     t.forward(L)
+#     t.right(60)
+#     t.forward(sz - 2 * L * math.cos(math.radians(60)))
+#     t.right(60)
+#     t.forward(L)
 
-sz = 50
-L = 10
+# sz = 50
+# L = 10
 
-draw_cube_net(t, sz)
+# draw_cube_net(t, sz)
 
-tab_positions = [
-    (0, sz * 2, 0), (0, 0, 210), (sz, sz, 120),
-    (-sz, -sz, 120), (sz * 2, 0, 120), (0, -sz * 2, 120), (sz, -sz, 120)
-]
+# tab_positions = [
+#     (0, sz * 2, 0), (0, 0, 210), (sz, sz, 120),
+#     (-sz, -sz, 120), (sz * 2, 0, 120), (0, -sz * 2, 120), (sz, -sz, 120)
+# ]
 
-for x, y, angle in tab_positions:
-    t.penup()
-    t.goto(x, y)
-    t.pendown()
-    t.right(angle)
-    cubeTab(t, sz, L)
+# for x, y, angle in tab_positions:
+#     t.penup()
+#     t.goto(x, y)
+#     t.pendown()
+#     t.right(angle)
+#     cubeTab(t, sz, L)
 
-turtle.done()
+# turtle.done()
+
+# def fun1(x):
+#     return x **2
+
+# x = 6
+# print(fun1(3)/fun1(2))
+# print(fun1(x/2))
+
+# import turtle
+
+# def squareFun(t, length):
+#     for i in range(4):
+#         t.forward(length)
+#         t.left(90)
+
+# leo = turtle.Turtle()
+
+# for i in range(3):
+#     squareFun(leo, 50)
+#     leo.forward(50)
+
+def funct(N):
+    y = 0
+    for i in range(N):
+        rand_num = random.randint(1, 5)
+        print(rand_num)
+        y = y + rand_num
+    return y
+
+print(funct(3))
+
 
 
    

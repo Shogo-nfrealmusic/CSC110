@@ -1423,15 +1423,102 @@ import random
 #     squareFun(leo, 50)
 #     leo.forward(50)
 
-def funct(N):
-    y = 0
-    for i in range(N):
-        rand_num = random.randint(1, 5)
-        print(rand_num)
-        y = y + rand_num
-    return y
+# def funct(N):
+#     y = 0
+#     for i in range(N):
+#         rand_num = random.randint(1, 5)
+#         print(rand_num)
+#         y = y + rand_num
+#     return y
 
-print(funct(3))
+# print(funct(3))
+
+import turtle
+import math
+
+t = turtle.Turtle()
+screen = turtle.Screen()
+t.speed(0)  
+
+def draw_square(t, sz):
+    for _ in range(4):
+        t.forward(sz)
+        t.right(90)
+
+def draw_cube_net(t, sz):
+    draw_square(t, sz)
+    
+    positions = [(0, sz), (0, -sz), (-sz, 0), (sz, 0), (0, 2 * sz)]
+    for x, y in positions:
+        t.penup()
+        t.goto(x, y)
+        t.pendown()
+        draw_square(t, sz)
+
+def cubeTab(t, sz, L):
+    t.left(60)
+    t.forward(L)
+    t.right(60)
+    t.forward(sz - 2 * L * math.cos(math.radians(60)))
+    t.right(60)
+    t.forward(L)
+
+sz = 50
+L = 10
+
+draw_cube_net(t, sz)
+
+tab_positions = [
+    (0, sz * 2, 0), (0, 0, 210), (sz, sz, 120),
+    (-sz, -sz, 120), (sz * 2, 0, 120), (0, -sz * 2, 120), (sz, -sz, 120)
+]
+
+for x, y, angle in tab_positions:
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.right(angle)
+    cubeTab(t, sz, L)
+
+turtle.done()
+
+# 2
+import turtle
+import math
+
+def square(t, sz):
+    for _ in range(4):
+        t.forward(sz)
+        t.right(90)
+
+def cubeTab(t, sz, L):
+    t.left(60)  
+    t.forward(L)
+    t.right(60)  
+    t.forward(sz - 2 * L * math.cos(math.radians(60)))  
+    t.right(60)  
+    t.forward(L)
+
+
+def B_with_tabs(t, sz, L):
+    square(t, sz)  
+    t.right(90)
+    t.forward(sz)
+    t.right(180)
+    cubeTab(t,sz,L)
+    t.right(30)
+    t.forward(sz)
+    t.right(90)
+    cubeTab(t, sz, L)
+    
+
+t = turtle.Turtle()
+sz = 50  
+L = 10  
+B_with_tabs(t, sz, L)
+turtle.done()
+
+
 
 
 

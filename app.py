@@ -1520,16 +1520,27 @@ import random
 
 
 
-n1 = float(input("Enter number1: "))
-n2 = float(input("Enter number2: "))
-n3 = float(input("Enter number3: "))
+# n1 = float(input("Enter number1: "))
+# n2 = float(input("Enter number2: "))
+# n3 = float(input("Enter number3: "))
 
-Max = n1
-if n2 > Max:
-    Max = n2
-if n3 > Max:
-    Max = n3
-print(Max)
+# Max = n1
+# if n2 > Max:
+#     Max = n2
+# if n3 > Max:
+#     Max = n3
+# print(Max)
+
+myNum=7
+answer=input("What to play? yes/no: ")
+if answer == 'yes':
+    number = int(input('Number 1-10: '))
+    if number == myNum:
+        print("It's correct")
+    else:
+        print(f"You're wrong. The answer is {myNum}")
+else:
+    print('bye')
 
 
 

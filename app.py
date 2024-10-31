@@ -1531,16 +1531,24 @@ import random
 #     Max = n3
 # print(Max)
 
-myNum=7
-answer=input("What to play? yes/no: ")
-if answer == 'yes':
-    number = int(input('Number 1-10: '))
-    if number == myNum:
-        print("It's correct")
-    else:
-        print(f"You're wrong. The answer is {myNum}")
-else:
-    print('bye')
+# myNum=7
+# answer=input("What to play? yes/no: ")
+# if answer == 'yes':
+#     number = int(input('Number 1-10: '))
+#     if number == myNum:
+#         print("It's correct")
+#     else:
+#         print(f"You're wrong. The answer is {myNum}")
+# else:
+#     print('bye')
+
+def isFactor(f,n):
+    return n % f == 0
+
+n = 60
+factors = [f for f in range(2, n) if isFactor(f, n)]
+print("Factors of 60 greater than 1 and less than 60:", factors)
+    
 
 
 

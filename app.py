@@ -1550,17 +1550,45 @@ import random
 # print("Factors of 60 greater than 1 and less than 60:", factors)
 
 # isFactor関数の定義（前の問題と同様）
+# def isFactor(f, n):
+#     return n % f == 0
+
+# # listOfFactorsOf関数の定義
+# def listOfFactorsOf(n):
+#     return [f for f in range(2, n) if isFactor(f, n)]
+
+# # 11から20までの整数とその因数のテーブルを表示
+# for num in range(11, 21):
+#     factors = listOfFactorsOf(num)
+#     print(f"Factors of {num}: {factors}")
+
+# 既存のヘルパー関数
 def isFactor(f, n):
+    '''returns True if f is a factor of n'''
     return n % f == 0
 
-# listOfFactorsOf関数の定義
 def listOfFactorsOf(n):
-    return [f for f in range(2, n) if isFactor(f, n)]
+    '''returns a list of the factors of n greater than 1 and less than n'''
+    factList = []
+    for i in range(2, n):
+        if isFactor(i, n):
+            factList.append(i)
+    return factList
 
-# 11から20までの整数とその因数のテーブルを表示
-for num in range(11, 21):
-    factors = listOfFactorsOf(num)
-    print(f"Factors of {num}: {factors}")
+# 素数判定関数
+def isPrime(n):
+    '''returns True if n is a prime number, otherwise False'''
+    return len(listOfFactorsOf(n)) == 0  # 素数の場合、1とn以外の因数がないため
+
+# 素数を1000以下で15個ずつ表示
+count = 0
+for num in range(2, 1001):
+    if isPrime(num):
+        print(num, end=' ')
+        count += 1
+        if count % 15 == 0:
+            print()  # 15個ごとに改行
+
 
     
 

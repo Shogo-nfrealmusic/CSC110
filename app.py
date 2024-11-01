@@ -1542,12 +1542,26 @@ import random
 # else:
 #     print('bye')
 
-def isFactor(f,n):
+# def isFactor(f,n):
+#     return n % f == 0
+
+# n = 60
+# factors = [f for f in range(2, n) if isFactor(f, n)]
+# print("Factors of 60 greater than 1 and less than 60:", factors)
+
+# isFactor関数の定義（前の問題と同様）
+def isFactor(f, n):
     return n % f == 0
 
-n = 60
-factors = [f for f in range(2, n) if isFactor(f, n)]
-print("Factors of 60 greater than 1 and less than 60:", factors)
+# listOfFactorsOf関数の定義
+def listOfFactorsOf(n):
+    return [f for f in range(2, n) if isFactor(f, n)]
+
+# 11から20までの整数とその因数のテーブルを表示
+for num in range(11, 21):
+    factors = listOfFactorsOf(num)
+    print(f"Factors of {num}: {factors}")
+
     
 
 

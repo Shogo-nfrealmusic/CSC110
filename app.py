@@ -1589,39 +1589,49 @@ import random
 #         if count % 15 == 0:
 #             print()  # 15個ごとに改行
 
-import math
+# import math
 
-# ヘルパー関数：因数の判定
-def isFactor(f, n):
-    '''returns True if f is a factor of n, where 1 < f < n'''
-    return n % f == 0
+# # ヘルパー関数：因数の判定
+# def isFactor(f, n):
+#     '''returns True if f is a factor of n, where 1 < f < n'''
+#     return n % f == 0
 
-# ヘルパー関数：因数のリストを返す
-def listOfFactorsOf(n):
-    '''returns a list of the factors f of int n, n >= 2, 1 < f < n'''
-    factList = []
-    for i in range(2, n):
-        if isFactor(i, n):
-            factList.append(i)
-    return factList
+# # ヘルパー関数：因数のリストを返す
+# def listOfFactorsOf(n):
+#     '''returns a list of the factors f of int n, n >= 2, 1 < f < n'''
+#     factList = []
+#     for i in range(2, n):
+#         if isFactor(i, n):
+#             factList.append(i)
+#     return factList
 
-# 素数判定関数（画像のコードを使って実装）
-def isPrime(n):
-    '''returns True if n is prime, otherwise False'''
-    return listOfFactorsOf(n) == []
+# # 素数判定関数（画像のコードを使って実装）
+# def isPrime(n):
+#     '''returns True if n is prime, otherwise False'''
+#     return listOfFactorsOf(n) == []
 
-# 効率的な素数判定関数（画像のコードを使って実装）
-def isPrimeFast(n):
-    '''returns True if n is prime using optimized method, otherwise False'''
-    upper = int(math.sqrt(n))  # チェックする必要がある最大の因数
-    for i in range(2, upper + 1):
-        if isFactor(i, n):
-            return False
-    return True
+# # 効率的な素数判定関数（画像のコードを使って実装）
+# def isPrimeFast(n):
+#     '''returns True if n is prime using optimized method, otherwise False'''
+#     upper = int(math.sqrt(n))  # チェックする必要がある最大の因数
+#     for i in range(2, upper + 1):
+#         if isFactor(i, n):
+#             return False
+#     return True
 
-# 動作確認
-print(isPrime(14))        # 基本の素数判定
-print(isPrimeFast(14))    # 効率化された素数判定
+# # 動作確認
+# print(isPrime(14))        # 基本の素数判定
+# print(isPrimeFast(14))    # 効率化された素数判定
+
+for i in range(1,6):
+    print(i)
+
+print()
+    
+i = 0
+while i <= 5:
+    print(i)
+    i += 1
 
 
 

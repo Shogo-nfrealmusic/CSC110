@@ -1623,15 +1623,40 @@ import random
 # print(isPrime(14))        # 基本の素数判定
 # print(isPrimeFast(14))    # 効率化された素数判定
 
-for i in range(1,6):
-    print(i)
+# for i in range(1,6):
+#     print(i)
 
-print()
+# print()
     
-i = 0
-while i <= 5:
-    print(i)
-    i += 1
+# i = 0
+# while i <= 5:
+#     print(i)
+#     i += 1
+
+# sum_accu = 0
+# for i in range(1, 101): 
+#     sum_accu = sum_accu + i
+
+# sum_accu = 0
+# i = 1
+# while i <=100:
+#     sum_accu = sum_accu + 1/i
+#     i += 1
+    
+# # gauss_sum = 100*101/2
+# print(sum_accu)
+# # print(gauss_sum)
+
+def f(x):
+    return x**2 + 1
+header = "x\t y\t" + "-"*15
+print(header)
+x = 1.0
+while x <= 5:
+    print(f"x: {x}, f(x): {f(x)}")
+    x += 0.5
+
+
 
 
 

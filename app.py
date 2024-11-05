@@ -1647,14 +1647,66 @@ import random
 # print(sum_accu)
 # # print(gauss_sum)
 
+# def f(x):
+#     return x**2 + 1
+# header = "x\t y\t" + "-"*15
+# print(header)
+# x = 1.0
+# while x <= 5:
+#     print(f"x: {x}, f(x): {f(x)}")
+#     x += 0.5
+
+# def f(x):
+#     return x**2 + 1
+
+# header = "x\t y\n" + "-"*15
+# print(header)
+
+# for i in [j * 0.5 for j in range(2, 11)]:  # 1から5まで0.5刻みでリストを作成
+#     print(i, "\t", f(i))
+
+
+# for j in range(1,8):
+#     print(j)
+    
+# k = 1
+# while k <= 7:
+#     print(k)
+#     k += 1
+
+# sum_accu = 0
+# i = 1
+# while i <=100:
+#     sum_accu = sum_accu + i
+#     i += 1
+
+# print(sum_accu)
+
+# balance = 10000
+
+# target = 1000000
+
+# interest_rate = 0.04
+
+# years = 0
+
+# while balance < target:
+#     balance += balance * interest_rate
+#     years += 1
+    
+# print(f"It will take {years} years to become a millionaire.")
+
 def f(x):
     return x**2 + 1
-header = "x\t y\t" + "-"*15
-print(header)
+
+# header = "x\t|\ty\n" + "-"*15
+# print(header)
+
 x = 1.0
 while x <= 5:
-    print(f"x: {x}, f(x): {f(x)}")
+    print(x , '\t', '|', f(x))
     x += 0.5
+
 
 
 

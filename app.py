@@ -1696,19 +1696,34 @@ import random
     
 # print(f"It will take {years} years to become a millionaire.")
 
-def f(x):
-    return x**2 + 1
+# def f(x):
+#     return x**2 + 1
 
-# header = "x\t|\ty\n" + "-"*15
-# print(header)
+# # header = "x\t|\ty\n" + "-"*15
+# # print(header)
 
-x = 1.0
-while x <= 5:
-    print(x , '\t', '|', f(x))
-    x += 0.5
+# x = 1.0
+# while x <= 5:
+#     print(x , '\t', '|', f(x))
+#     x += 0.5
 
+# print("1-cheese")
+# print("2-weggie")
+# print("3-salami")
+# print("4-quit")
 
+# while True:
+#     try:
+#         order = int(input("order [1-4] "))
+#         if order in (1, 2, 3, 4):
+#             break
+#     except ValueError:
+#         pass  # 何もしないで再度入力を求める
 
+# if order == 4:
+#     print("Have a nice day")
+# else:
+#     print("You order will be right up")
 
 
 

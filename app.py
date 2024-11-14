@@ -1725,9 +1725,66 @@ import random
 # else:
 #     print("You order will be right up")
 
+# def cookies_cost(N, unit_cost):
+#     total_cost = N * unit_cost
+#     if N >= 15:
+#         total_cost -= 6
+#     elif N >= 5:
+#         total_cost -= 1
+#     return total_cost
 
+# # Main program
+# unit_cost = 1.50
+# try:
+#     N = int(input("How many cookies would you like to buy? "))
+#     total_cost = cookies_cost(N, unit_cost)
+#     print(f"For {N} cookies, the total cost is ${total_cost:.2f}")
+# except ValueError:
+#     print("Please enter a valid number of cookies.")
 
-    
+# import random
+# Ncomp = 37
+# guess = int(input("Enter your guess(0-99): "))
+
+import random  # Import the random module to generate a random number
+
+def match_digit(n, guess):  # Define a function that compares the correct number n with the player's guess
+    if n == guess:  # Check if the correct number and player's guess are the same
+        return "Correct!"  # If they are the same, return "Correct!"
+    elif n // 10 == guess // 10:  # Check if the tens digit matches
+        return "Tens digit matches"  # If tens digit matches, return this message
+    elif n % 10 == guess % 10:  # Check if the ones digit matches
+        return "Ones digit matches"  # If ones digit matches, return this message
+    else:
+        return "Incorrect"  # If neither tens nor ones match, return "Incorrect"
+
+def guessing_game():  # Define the function to run the guessing game
+    number = random.randint(0, 99)  # Generate a random two-digit number as the correct answer
+    attempts = 0  # Initialize a variable to count the player's attempts
+
+    print("Guess the two-digit number!")  # Print a message to start the game
+
+    while True:  # Start an infinite loop to keep the game going until the correct guess
+        try:
+            guess = int(input("Enter your guess: "))  # Get the player's input as an integer
+        except ValueError:  # Handle the case where the input is not an integer
+            print("Invalid input. Please enter an integer.")  # Show an error message
+            continue  # Go back to the beginning of the loop
+
+        if guess < 0 or guess > 99:  # Check if the guess is a two-digit number
+            print("Please enter 0-99")  # If not, show an error message
+            continue  # Return to the start of the loop to get a valid input
+
+        attempts += 1  # Increase the attempt count by 1
+
+        result = match_digit(number, guess)  # Check if the guess is correct using match_digit
+        print(result)  # Print the hint or correct message
+
+        if result == "Correct!":  # If the player guessed correctly
+            print(f"Congratulations! You guessed it in {attempts} attempts.")  # Show success message with attempt count
+            break  # Exit the loop and end the game
+
+guessing_game()  # Start the guessing game
 
 
 

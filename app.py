@@ -934,7 +934,7 @@
 
 # print(random.random())
 
-import random
+# import random
 
 # print(random.randint(1,6))
 
@@ -1746,47 +1746,198 @@ import random
 # Ncomp = 37
 # guess = int(input("Enter your guess(0-99): "))
 
-import random  # Import the random module to generate a random number
+# import random  # Import the random module to generate a random number
 
-def match_digit(n, guess):  # Define a function that compares the correct number n with the player's guess
-    if n == guess:  # Check if the correct number and player's guess are the same
-        return "Correct!"  # If they are the same, return "Correct!"
-    elif n // 10 == guess // 10:  # Check if the tens digit matches
-        return "Tens digit matches"  # If tens digit matches, return this message
-    elif n % 10 == guess % 10:  # Check if the ones digit matches
-        return "Ones digit matches"  # If ones digit matches, return this message
-    else:
-        return "Incorrect"  # If neither tens nor ones match, return "Incorrect"
+# def match_digit(n, guess):  # Define a function that compares the correct number n with the player's guess
+#     if n == guess:  # Check if the correct number and player's guess are the same
+#         return "Correct!"  # If they are the same, return "Correct!"
+#     elif n // 10 == guess // 10:  # Check if the tens digit matches
+#         return "Tens digit matches"  # If tens digit matches, return this message
+#     elif n % 10 == guess % 10:  # Check if the ones digit matches
+#         return "Ones digit matches"  # If ones digit matches, return this message
+#     else:
+#         return "Incorrect"  # If neither tens nor ones match, return "Incorrect"
 
-def guessing_game():  # Define the function to run the guessing game
-    number = random.randint(0, 99)  # Generate a random two-digit number as the correct answer
-    attempts = 0  # Initialize a variable to count the player's attempts
+# def guessing_game():  # Define the function to run the guessing game
+#     number = random.randint(0, 99)  # Generate a random two-digit number as the correct answer
+#     attempts = 0  # Initialize a variable to count the player's attempts
 
-    print("Guess the two-digit number!")  # Print a message to start the game
+#     print("Guess the two-digit number!")  # Print a message to start the game
 
-    while True:  # Start an infinite loop to keep the game going until the correct guess
-        try:
-            guess = int(input("Enter your guess: "))  # Get the player's input as an integer
-        except ValueError:  # Handle the case where the input is not an integer
-            print("Invalid input. Please enter an integer.")  # Show an error message
-            continue  # Go back to the beginning of the loop
+#     while True:  # Start an infinite loop to keep the game going until the correct guess
+#         try:
+#             guess = int(input("Enter your guess: "))  # Get the player's input as an integer
+#         except ValueError:  # Handle the case where the input is not an integer
+#             print("Invalid input. Please enter an integer.")  # Show an error message
+#             continue  # Go back to the beginning of the loop
 
-        if guess < 0 or guess > 99:  # Check if the guess is a two-digit number
-            print("Please enter 0-99")  # If not, show an error message
-            continue  # Return to the start of the loop to get a valid input
+#         if guess < 0 or guess > 99:  # Check if the guess is a two-digit number
+#             print("Please enter 0-99")  # If not, show an error message
+#             continue  # Return to the start of the loop to get a valid input
 
-        attempts += 1  # Increase the attempt count by 1
+#         attempts += 1  # Increase the attempt count by 1
 
-        result = match_digit(number, guess)  # Check if the guess is correct using match_digit
-        print(result)  # Print the hint or correct message
+#         result = match_digit(number, guess)  # Check if the guess is correct using match_digit
+#         print(result)  # Print the hint or correct message
 
-        if result == "Correct!":  # If the player guessed correctly
-            print(f"Congratulations! You guessed it in {attempts} attempts.")  # Show success message with attempt count
-            break  # Exit the loop and end the game
+#         if result == "Correct!":  # If the player guessed correctly
+#             print(f"Congratulations! You guessed it in {attempts} attempts.")  # Show success message with attempt count
+#             break  # Exit the loop and end the game
 
-guessing_game()  # Start the guessing game
+# guessing_game()  # Start the guessing game
+
+# def chessboard(t, sz, N, col1, col2):
+#     t.fillcolor(col1)
+#     t.begin_fill()
+#     for _ in range(4):
+#         t.forward(sz)
+#         t.left(90)
+#     t.end_fill()
+#     t.fillcolor(col2)
+#     if N % 2 != 0:
+#         for k in range(int((N - 1) / 2)):
+#             t.up()
+#             t.setheading(0)
+#             t.goto(2 * k * sz / N, 0)
+#             t.forward(sz / N)
+#             for _ in range(int((N - 1) / 2)):
+#                 t.down()
+#                 t.begin_fill()
+#                 t.forward(sz / N)
+#                 t.left(90)
+#                 t.forward(sz / N)
+#                 t.left(90)
+#                 t.forward(2 * sz / N)
+#                 t.right(90)
+#                 t.forward(sz / N)
+#                 t.right(90)
+#                 t.forward(sz / N)
+#                 t.end_fill()
+#             t.begin_fill()
+#             t.forward(sz / N)
+#             t.left(90)
+#             t.forward(sz / N)
+#             t.left(90)
+#             t.forward(sz / N)
+#             t.end_fill()
+#             t.up()
+#         t.goto(sz, 0)
+#         t.down()
+#         for k in range(int((N - 1) / 2)):
+#             t.setheading(0)
+#             t.begin_fill()
+#             t.left(90)
+#             t.forward(sz / N)
+#             t.left(90)
+#             t.forward(sz / N)
+#             t.right(90)
+#             t.forward(sz / N)
+#             t.right(90)
+#             t.forward(sz / N)
+#             t.end_fill()
+#     else:
+#         for k in range(int(N / 2)):
+#             t.goto(2 * k * sz / N, 0)
+#             t.forward(sz / N)
+#             for _ in range(int(N / 2)):
+#                 t.down()
+#                 t.begin_fill()
+#                 t.forward(sz / N)
+#                 t.left(90)
+#                 t.forward(sz / N)
+#                 t.left(90)
+#                 t.forward(2 * sz / N)
+#                 t.right(90)
+#                 t.forward(sz / N)
+#                 t.right(90)
+#                 t.forward(sz / N)
+#                 t.end_fill()
+#                 t.up()
+                
+# def chessboard2(t, sz, N, col1, col2):
+#     t.fillcolor(col1)
+#     t.begin_fill()
+#     for _ in range(4):
+#         t.forward(sz*2)
+#         t.left(90)
+#     t.end_fill()
+#     t.fillcolor(col2)
+#     if N % 2 != 0:
+#         for k in range(int((N - 1) / 2)):
+#             t.up()
+#             t.setheading(0)
+#             t.goto(2 * k * sz*2 / N, 0)
+#             t.forward(sz*2 / N)
+#             for _ in range(int((N - 1) / 2)):
+#                 t.down()
+#                 t.begin_fill()
+#                 t.forward(sz*2 / N)
+#                 t.left(90)
+#                 t.forward(sz*2 / N)
+#                 t.left(90)
+#                 t.forward(2 * sz*2 / N)
+#                 t.right(90)
+#                 t.forward(sz*2 / N)
+#                 t.right(90)
+#                 t.forward(sz*2 / N)
+#                 t.end_fill()
+#             t.begin_fill()
+#             t.forward(sz*2 / N)
+#             t.left(90)
+#             t.forward(sz*2 / N)
+#             t.left(90)
+#             t.forward(sz*2 / N)
+#             t.end_fill()
+#             t.up()
+#         t.goto(sz*2, 0)
+#         t.down()
+#         for k in range(int((N - 1) / 2)):
+#             t.setheading(0)
+#             t.begin_fill()
+#             t.left(90)
+#             t.forward(sz*2 / N)
+#             t.left(90)
+#             t.forward(sz*2 / N)
+#             t.right(90)
+#             t.forward(sz*2 / N)
+#             t.right(90)
+#             t.forward(sz*2 / N)
+#             t.end_fill()
+#     else:
+#         for k in range(int(N / 2)):
+#             t.goto(2 * k * sz*2 / N, 0)
+#             t.forward(sz*2 / N)
+#             for _ in range(int(N / 2)):
+#                 t.down()
+#                 t.begin_fill()
+#                 t.forward(sz*2 / N)
+#                 t.left(90)
+#                 t.forward(sz*2 / N)
+#                 t.left(90)
+#                 t.forward(2 * sz*2 / N)
+#                 t.right(90)
+#                 t.forward(sz*2 / N)
+#                 t.right(90)
+#                 t.forward(sz*2 / N)
+#                 t.end_fill()
+#                 t.up()
 
 
+import turtle
+
+sam = turtle.Turtle()
+
+sam.left(90)
+sam.forward(100)
+sam.left(90)
+sam.forward(40)
+sam.right(30)
+sam.forward(100)
+
+turtle.done()
+
+import os
+os._exit(0)
 
    
 

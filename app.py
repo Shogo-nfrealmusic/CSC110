@@ -1923,21 +1923,421 @@
 #                 t.up()
 
 
+# import turtle
+
+# sam = turtle.Turtle()
+
+# sam.left(90)
+# sam.forward(100)
+# sam.left(90)
+# sam.forward(40)
+# sam.right(30)
+# sam.forward(100)
+
+# turtle.done()
+
+# import os
+# os._exit(0)
+
+# import turtle
+# import math
+
+# def Rpattern(t, sz, R, col3, col4):
+#     size = 45
+#     decrement = size / 15
+#     colors = ["yellow", "lightblue"]
+
+#     cx, cy = t.xcor(), t.ycor()
+
+#     offset = (sz - size) / 2
+
+#     t.penup()
+#     t.goto(cx + offset, cy + sz - offset)
+#     t.setheading(0)
+#     t.pendown()
+
+#     for i in range(15):
+#         t.color(colors[i % 2])
+#         t.fillcolor(colors[i % 2])
+#         t.begin_fill()
+#         for _ in range(4):
+#             t.forward(size)
+#             t.right(90)
+#         t.end_fill()
+
+#         size -= decrement
+#         t.penup()
+#         t.goto(t.xcor() + decrement/2, t.ycor() - decrement/2)
+#         t.pendown()
+
+
+# def chessboard(t, sz, N, col1, col2):
+#     t.fillcolor(col1)
+#     t.begin_fill()
+#     for i in range(4):
+#         t.forward(sz)
+#         t.left(90)
+#     t.end_fill()
+#     t.fillcolor(col2)
+#     if N % 2 != 0:  # odd
+#         for k in range(int((N-1)/2)):
+#             t.up()
+#             t.setheading(0)
+#             t.goto(2*k*sz/N, 0)
+#             t.forward(sz/N)
+#             for i in range(int((N-1)/2)):
+#                 t.down()
+#                 t.begin_fill()
+#                 t.forward(sz/N)
+#                 t.left(90)
+#                 t.forward(sz/N)
+#                 t.left(90)
+#                 t.forward(2 * sz/N)
+#                 t.right(90)
+#                 t.forward(sz/N)
+#                 t.right(90)
+#                 t.forward(sz/N)
+#                 t.end_fill()
+#             t.begin_fill()
+#             t.forward(sz/N)
+#             t.left(90)
+#             t.forward(sz/N)
+#             t.left(90)
+#             t.forward(sz/N)
+#             t.end_fill()
+#             t.up()
+
+#         t.goto(sz, 0)
+#         t.down()
+#         for k in range(int((N-1)/2)):
+#             t.setheading(0)
+#             t.begin_fill()
+#             t.left(90)
+#             t.forward(sz/N)
+#             t.left(90)
+#             t.forward(sz/N)
+#             t.right(90)
+#             t.forward(sz/N)
+#             t.right(90)
+#             t.forward(sz/N)
+#             t.end_fill()
+
+#     else:  
+#         for k in range(int(N/2)):
+#             t.goto(2*k*sz/N, 0)
+#             t.forward(sz/N)
+#             for i in range(int(N/2)):
+#                 t.down()
+#                 t.begin_fill()
+#                 t.forward(sz/N)
+#                 t.left(90)
+#                 t.forward(sz/N)
+#                 t.left(90)
+#                 t.forward(2 * sz/N)
+#                 t.right(90)
+#                 t.forward(sz/N)
+#                 t.right(90)
+#                 t.forward(sz/N)
+#                 t.end_fill()
+#                 t.up()
+
+# def square(t, sz):
+#     for i in range(4):
+#         t.forward(sz)
+#         t.left(90)
+
+# def cubeTab(t, sz, L):
+#     t.goto(0, sz)
+#     t.left(60)
+#     t.forward(L)
+#     t.right(60)
+#     t.forward(sz - 2*L*math.cos(math.radians(60)))
+#     t.right(60)
+#     t.forward(L)
+
+# def B_with_tabs(t, sz, L, col3):
+#     for i in range(3):
+#         t.right(90)
+#         t.forward(sz)
+
+#     t.left(120)
+#     t.forward(L)
+#     t.left(60)
+#     t.forward(sz - 2*L*math.cos(math.radians(60)))
+#     t.left(60)
+#     t.forward(L)
+
+#     t.left(30)
+#     t.forward(sz)
+#     t.left(30)
+#     t.forward(L)
+#     t.left(60)
+#     t.forward(sz - 2*L*math.cos(math.radians(60)))
+#     t.left(60)
+#     t.forward(L)
+
+
+# def CAC_with_tabs(t, sz, L):
+#     t.up()
+#     t.home()
+#     t.goto(-sz, -sz)
+#     t.down()
+#     t.forward(3*sz)
+#     t.right(90)
+#     t.forward(sz)
+#     t.right(90)
+#     t.forward(3*sz)
+#     t.right(90)
+#     t.forward(sz)
+
+#     t.left(120)
+#     t.forward(L)
+#     t.left(60)
+#     t.forward(sz - 2*L*math.cos(math.radians(60)))
+#     t.left(60)
+#     t.forward(L)
+
+#     t.up()
+#     t.goto(2*sz, -sz)
+#     t.down()
+#     t.forward(L)
+#     t.right(60)
+#     t.forward(sz - 2*L*math.cos(math.radians(60)))
+#     t.right(60)
+#     t.forward(L)
+
+#     t.up()
+#     t.goto(0, -2*sz)
+#     t.down()
+#     t.right(120)
+#     t.forward(sz)
+
+#     t.up()
+#     t.goto(sz, -sz)
+#     t.down()
+#     t.backward(sz)
+
+# t = turtle.Turtle()
+# t.speed(0)
+
+# sz = 50
+# L = 10
+# R = 3
+# col1 = 'green'
+# col2 = 'red'
+# col3 = 'blue'
+# col4 = 'yellow'
+
+# square(t, sz)
+# cubeTab(t, sz, L)
+# t.up()
+# t.goto(sz, 0)
+# t.left(60)
+# t.down()
+# B_with_tabs(t, sz, L, col3)
+# CAC_with_tabs(t, sz, L)
+# t.right(90)
+# B_with_tabs(t, 50, 10, col3)
+
+# t.up()
+# t.goto(0, 0)
+# t.setheading(0)
+# t.down()
+# chessboard(t, sz, 4, col1, col2)
+
+# t.up()
+# t.goto(0, -sz)
+# t.setheading(0)
+# t.down()
+# Rpattern(t, sz, R, col3, col4)
+
+# t.up()
+# t.goto(0, -sz*3)
+# t.setheading(0)
+# t.down()
+# Rpattern(t, sz, R, col3, col4)
+
+# turtle.done()
+
+# import turtle
+# import random
+
+# def draw_dot_pattern(t, size, num_dots, colors):
+#     """
+#     ランダムな点のパターンを描画
+#     t: turtleオブジェクト
+#     size: 正方形のサイズ
+#     num_dots: 点の数
+#     colors: 点の色のリスト
+#     """
+#     for _ in range(num_dots):
+#         x = random.uniform(-size / 2, size / 2)
+#         y = random.uniform(-size / 2, size / 2)
+#         t.up()
+#         t.goto(x, y)
+#         t.down()
+#         t.dot(size / 10, random.choice(colors))
+
+# def draw_square_with_pattern(t, pos, size, num_dots, colors):
+#     """
+#     指定した位置にランダムな点のパターンを描画
+#     t: turtleオブジェクト
+#     pos: (x, y) 開始位置
+#     size: 正方形のサイズ
+#     num_dots: 点の数
+#     colors: 点の色リスト
+#     """
+#     t.up()
+#     t.goto(pos)
+#     t.down()
+#     t.begin_fill()
+#     t.fillcolor("white")
+#     for _ in range(4):  # 枠線を描画
+#         t.forward(size)
+#         t.left(90)
+#     t.end_fill()
+
+#     # 中に点を描画
+#     draw_dot_pattern(t, size, num_dots, colors)
+
+# def setup_turtle():
+#     """タートルの初期設定を行う"""
+#     t = turtle.Turtle()
+#     t.speed(5)
+#     return t
+
+# # メインコード部分
+# t = setup_turtle()
+# square_size = 100  # 正方形のサイズ
+# num_dots = 20      # 点の数
+# dot_colors = ["red", "blue", "green", "yellow"]  # 点の色
+
+# # Cの左側の正方形に描画
+# draw_square_with_pattern(t, (-200, 0), square_size, num_dots, dot_colors)
+
+# # Cの右側の正方形に描画
+# draw_square_with_pattern(t, (50, 0), square_size, num_dots, dot_colors)
+
+# turtle.done()
+
 import turtle
 
-sam = turtle.Turtle()
+def draw_square(t, size):
+    for _ in range(4):
+        t.forward(size)
+        t.left(90)
 
-sam.left(90)
-sam.forward(100)
-sam.left(90)
-sam.forward(40)
-sam.right(30)
-sam.forward(100)
+def move_to(t, x, y):
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
 
+def draw_cube_and_get_coords(t, size=100, offset=50):
+    move_to(t, -size/2, -size/2)
+    front_square_start = t.position()
+    draw_square(t, size)
+
+    front_square_coords = [
+        front_square_start,
+        (front_square_start[0]+size, front_square_start[1]),
+        (front_square_start[0]+size, front_square_start[1]+size),
+        (front_square_start[0], front_square_start[1]+size)
+    ]
+
+    t.penup()
+    t.goto(front_square_coords[0][0] + offset, front_square_coords[0][1] + offset)
+    t.setheading(0)
+    t.pendown()
+    back_square_start = t.position()
+    draw_square(t, size)
+    back_square_coords = [
+        back_square_start,
+        (back_square_start[0]+size, back_square_start[1]),
+        (back_square_start[0]+size, back_square_start[1]+size),
+        (back_square_start[0], back_square_start[1]+size)
+    ]
+
+    t.penup()
+    t.goto(front_square_coords[0])
+    t.pendown()
+    t.goto(back_square_coords[0])
+
+    t.penup()
+    t.goto(front_square_coords[1])
+    t.pendown()
+    t.goto(back_square_coords[1])
+
+    t.penup()
+    t.goto(front_square_coords[2])
+    t.pendown()
+    t.goto(back_square_coords[2])
+
+    t.penup()
+    t.goto(front_square_coords[3])
+    t.pendown()
+    t.goto(back_square_coords[3])
+
+    return front_square_coords, back_square_coords
+
+
+def draw_geometric_pattern_in_square(t, square_coords, layers=10, angle_step=15, size_ratio=0.8):
+    xs = [p[0] for p in square_coords]
+    ys = [p[1] for p in square_coords]
+    center_x = sum(xs) / 4
+    center_y = sum(ys) / 4
+
+    base_size = abs(xs[1] - xs[0])
+
+    t.penup()
+    t.goto(center_x, center_y)
+    t.setheading(0)
+    t.color("blue")
+    t.width(1)
+    t.pendown()
+
+    current_size = base_size * 0.8  
+    for i in range(layers):
+        t.penup()
+        t.goto(center_x, center_y)
+        t.setheading(i * angle_step)  
+        t.forward(current_size/2) 
+        t.left(90)
+        t.penup()
+        t.forward(current_size/2)  
+        t.left(90)
+        t.pendown()
+        
+        for _ in range(4):
+            t.forward(current_size)
+            t.left(90)
+
+        current_size *= size_ratio
+
+
+screen = turtle.Screen()
+screen.title("3D Cube with Geometric Patterns")
+
+t = turtle.Turtle()
+t.speed(0)
+t.color("black")
+t.width(2)
+
+front_square_coords, back_square_coords = draw_cube_and_get_coords(t, size=100, offset=50)
+
+draw_geometric_pattern_in_square(t, front_square_coords, layers=12, angle_step=10, size_ratio=0.9)
+draw_geometric_pattern_in_square(t, back_square_coords, layers=12, angle_step=10, size_ratio=0.9)
+
+t.hideturtle()
 turtle.done()
 
-import os
-os._exit(0)
+
+
+
+
+
+
+
+
 
    
 
